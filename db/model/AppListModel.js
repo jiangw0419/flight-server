@@ -11,7 +11,8 @@ const Apps = mongoose.model('lc_app_list', new mongoose.Schema({
     size:String,
     downloadPath:String,
     appId:String,//和lc_apps表关联的id
-    appName:String
+    appName:String,
+    account:String,//上传的用户账号
 }), 'lc_app_list')
 
 module.exports = Apps

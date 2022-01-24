@@ -8,6 +8,7 @@ var userRouter = require('./routes/user');
 var fileRouter = require('./routes/file');
 var appRouter = require('./routes/apps');
 var appListRouter = require('./routes/applist');
+var roleRouter = require('./routes/role');
 
 
 var app = express();
@@ -36,6 +37,7 @@ app.use('/user', userRouter);
 app.use('/file', fileRouter);
 app.use('/app', appRouter);
 app.use('/appList', appListRouter);
+app.use('/role', roleRouter);
 
 // const port = process.env.PORT || 3001;
 // app.listen(port, () => {

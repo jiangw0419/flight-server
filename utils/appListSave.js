@@ -23,6 +23,7 @@ exports.saveAppList = (req, res) => {
                     downloadPath:body.path,
                     appName:body.label,
                     appId: body.appId,//和lc_apps表关联的id
+                    account:body.userAccount
                 })
                 console.log("----->app=", app);
                 app.save((err) => {
